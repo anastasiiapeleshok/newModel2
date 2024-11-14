@@ -1,4 +1,148 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="1" loadPath="newModel22" entityName="newModel22" version="8" name="newModel22" lastUpdated="2024-11-14T13:21:26.134+02:00" lastUpdatedBy="admin" id="admin:MODEL:newModel22" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <views allColumns="true" default="true" modelView="true" entityName="newModel22" name="newModel22" description="Default view for list newModel22" id="newModel22"/>
+<ns3:modelConfig xsi:type="ns3:ModelConfig" folder="" pauseCalculations="false" entityCode="1" loadPath="newModel22clone" entityName="newModel22clone" version="27" name="newModel22clone" lastUpdated="2024-11-14T13:22:35.657+02:00" lastUpdatedBy="admin" id="admin:MODEL:newModel22clone" xmlns:ns6="http://www.modelshop.com/services/account/types" xmlns:ns5="http://www.modelshop.com/datacore/message/types" xmlns:ns8="http://www.modelshop.com/datacore/generator/types" xmlns:ns7="http://www.modelshop.com/datacore/repository/types" xmlns:ns2="http://www.modelshop.com/datacore/view/types" xmlns:ns4="http://www.modelshop.com/services/model/types" xmlns:ns3="http://www.modelshop.com/model/model/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <datalists entityCode="2" entityName="candidates_report_2024-11-07T09" version="25" name="candidates_report_2024-11-07T09" created="2024-11-14T13:22:30.329+02:00" createdBy="admin" lastUpdated="2024-11-14T13:22:30.329+02:00" lastUpdatedBy="admin" id="candidates_report_2024-11-07T09">
+        <dataFields type="integer" fieldCode="100" rawType="java.lang.Long" allowNull="true" name="Candidate Id" initialized="true" id="Candidate Id"/>
+        <dataFields type="text" fieldCode="101" rawType="java.lang.String" allowNull="true" name="Candidate Name" initialized="true" id="Candidate Name"/>
+        <dataFields type="text" fieldCode="102" rawType="java.lang.String" allowNull="true" name="Candidate Email" initialized="true" id="Candidate Email"/>
+        <dataFields type="text" fieldCode="103" rawType="java.lang.String" allowNull="true" name="Ip Address" initialized="true" id="Ip Address"/>
+        <dataFields fieldCode="104" rawType="java.lang.Object" allowNull="true" name="Candidate Tags" initialized="true" id="Candidate Tags"/>
+        <dataFields type="integer" fieldCode="105" rawType="java.lang.Long" allowNull="true" name="Company Id" initialized="true" id="Company Id"/>
+        <dataFields type="text" fieldCode="106" rawType="java.lang.String" allowNull="true" name="Company Name" initialized="true" id="Company Name"/>
+        <dataFields type="integer" fieldCode="107" rawType="java.lang.Long" allowNull="true" name="Invite Id" initialized="true" id="Invite Id"/>
+        <dataFields type="text" fieldCode="108" rawType="java.lang.String" allowNull="true" name="Invited By Name" initialized="true" id="Invited By Name"/>
+        <dataFields type="text" fieldCode="109" rawType="java.lang.String" allowNull="true" name="Invited By Email" initialized="true" id="Invited By Email"/>
+        <dataFields type="text" fieldCode="110" rawType="java.lang.String" allowNull="true" name="Invite Valid From" initialized="true" id="Invite Valid From"/>
+        <dataFields type="datetime" format="M/d/yy h:mm a" fieldCode="111" rawType="com.modelshop.datacore.datatype.Date" allowNull="true" name="Invite Valid To" initialized="true" id="Invite Valid To"/>
+        <dataFields type="text" fieldCode="112" rawType="java.lang.String" allowNull="true" name="Invited At" initialized="true" id="Invited At"/>
+        <dataFields type="text" fieldCode="113" rawType="java.lang.String" allowNull="true" name="Invite Method" initialized="true" id="Invite Method"/>
+        <dataFields type="integer" fieldCode="114" rawType="java.lang.Long" allowNull="true" name="Test Id" initialized="true" id="Test Id"/>
+        <dataFields type="text" fieldCode="115" rawType="java.lang.String" allowNull="true" name="Test Name" initialized="true" id="Test Name"/>
+        <dataFields type="text" fieldCode="116" rawType="java.lang.String" allowNull="true" name="Role" initialized="true" id="Role"/>
+        <dataFields type="integer" fieldCode="117" rawType="java.lang.Long" allowNull="true" name="Test Duration (seconds)" initialized="true" id="Test Duration (seconds)"/>
+        <dataFields type="text" fieldCode="118" rawType="java.lang.String" allowNull="true" name="Test Owner Name" initialized="true" id="Test Owner Name"/>
+        <dataFields type="text" fieldCode="119" rawType="java.lang.String" allowNull="true" name="Test Owner Email" initialized="true" id="Test Owner Email"/>
+        <dataFields type="integer" fieldCode="120" rawType="java.lang.Long" allowNull="true" name="Attempt Id" initialized="true" id="Attempt Id"/>
+        <dataFields type="text" fieldCode="121" rawType="java.lang.String" allowNull="true" name="Attempt Starttime" initialized="true" id="Attempt Starttime"/>
+        <dataFields type="text" fieldCode="122" rawType="java.lang.String" allowNull="true" name="Attempt Endtime" initialized="true" id="Attempt Endtime"/>
+        <dataFields type="integer" fieldCode="123" rawType="java.lang.Long" allowNull="true" name="Attempt Time Taken (seconds)" initialized="true" id="Attempt Time Taken (seconds)"/>
+        <dataFields type="text" fieldCode="124" rawType="java.lang.String" allowNull="true" name="Status" initialized="true" id="Status"/>
+        <dataFields type="integer" fieldCode="125" rawType="java.lang.Long" allowNull="true" name="Attempt Count" initialized="true" id="Attempt Count"/>
+        <dataFields type="integer" fieldCode="126" rawType="java.lang.Long" allowNull="true" name="Attempt Count(LifeTime)" initialized="true" id="Attempt Count(LifeTime)"/>
+        <dataFields type="integer" fieldCode="127" rawType="java.lang.Long" allowNull="true" name="Max Score" initialized="true" id="Max Score"/>
+        <dataFields type="integer" fieldCode="128" rawType="java.lang.Long" allowNull="true" name="Cutoff Score" initialized="true" id="Cutoff Score"/>
+        <dataFields type="decimal" fieldCode="129" rawType="java.math.BigDecimal" allowNull="true" name="Score" initialized="true" id="Score"/>
+        <dataFields type="decimal" fieldCode="130" rawType="java.math.BigDecimal" allowNull="true" name="Percentage Score" initialized="true" id="Percentage Score"/>
+        <dataFields type="text" fieldCode="131" rawType="java.lang.String" allowNull="true" name="Detailed Report Url" initialized="true" id="Detailed Report Url"/>
+        <dataFields type="integer" fieldCode="132" rawType="java.lang.Long" allowNull="true" name="Total Questions Asked" initialized="true" id="Total Questions Asked"/>
+        <dataFields type="integer" fieldCode="133" rawType="java.lang.Long" allowNull="true" name="Percentage Questions Answered" initialized="true" id="Percentage Questions Answered"/>
+        <dataFields type="text" fieldCode="134" rawType="java.lang.String" allowNull="true" name="Atleast 1 Question Answered" initialized="true" id="Atleast 1 Question Answered"/>
+        <dataFields type="text" fieldCode="135" rawType="java.lang.String" allowNull="true" name="All Questions Answered" initialized="true" id="All Questions Answered"/>
+        <dataFields type="text" fieldCode="136" rawType="java.lang.String" allowNull="true" name="Attempt Plagiarism" initialized="true" id="Attempt Plagiarism"/>
+        <dataFields type="integer" fieldCode="137" rawType="java.lang.Long" allowNull="true" name="Number Of Window Exits" initialized="true" id="Number Of Window Exits"/>
+        <dataFields type="integer" fieldCode="138" rawType="java.lang.Long" allowNull="true" name="Out Of Window Duration (seconds)" initialized="true" id="Out Of Window Duration (seconds)"/>
+        <dataFields type="integer" fieldCode="139" rawType="java.lang.Long" allowNull="true" name="Network Disconnected Duration (seconds)" initialized="true" id="Network Disconnected Duration (seconds)"/>
+        <dataFields type="integer" fieldCode="140" rawType="java.lang.Long" allowNull="true" name="Copy Paste Frequency" initialized="true" id="Copy Paste Frequency"/>
+        <dataFields type="text" fieldCode="141" rawType="java.lang.String" allowNull="true" name="Webcam Switch Detected" initialized="true" id="Webcam Switch Detected"/>
+        <dataFields type="integer" fieldCode="142" rawType="java.lang.Long" allowNull="true" name="Candidate Feedback Rating" initialized="true" id="Candidate Feedback Rating"/>
+        <dataFields type="text" fieldCode="143" rawType="java.lang.String" allowNull="true" name="Candidate Feedback Comments" initialized="true" id="Candidate Feedback Comments"/>
+        <dataFields type="text" fieldCode="144" rawType="java.lang.String" allowNull="true" name="Test Creator - Team" initialized="true" id="Test Creator - Team"/>
+        <dataFields type="text" fieldCode="145" rawType="java.lang.String" allowNull="true" name="Test Creator - Team Owner" initialized="true" id="Test Creator - Team Owner"/>
+        <dataFields fieldCode="146" rawType="java.lang.Object" allowNull="true" name="Test Creator - Region" initialized="true" id="Test Creator - Region"/>
+        <dataFields fieldCode="147" rawType="java.lang.Object" allowNull="true" name="Test Creator - Department" initialized="true" id="Test Creator - Department"/>
+        <dataFields type="text" fieldCode="148" rawType="java.lang.String" allowNull="true" name="full name" initialized="true" id="full name"/>
+        <dataFields type="text" fieldCode="149" rawType="java.lang.String" allowNull="true" name="years experience" initialized="true" id="years experience"/>
+        <dataFields type="text" fieldCode="150" readOnly="true" rawType="java.lang.String" name="sourceName" description="Source name" initialized="true" id="sourceName">
+            <defaultValue source="'Manual Entry'"/>
+        </dataFields>
+        <dataFields type="integer" fieldCode="151" readOnly="true" rawType="java.lang.Long" name="lineNumber" description="Source line number" initialized="true" id="lineNumber">
+            <defaultValue source="id"/>
+        </dataFields>
+    </datalists>
+    <datalists entityCode="3" entityName="Sheet1" version="25" name="Sheet1" created="2024-11-14T13:22:30.331+02:00" createdBy="admin" lastUpdated="2024-11-14T13:22:30.331+02:00" lastUpdatedBy="admin" id="Sheet1"/>
+    <datalists entityCode="4" entityName="Datalist1" version="25" name="Datalist1" description="" created="2024-11-14T13:22:35.657+02:00" createdBy="admin" lastUpdated="2024-11-14T13:22:35.657+02:00" lastUpdatedBy="admin" id="Datalist1"/>
+    <views allColumns="true" default="true" modelView="true" entityName="newModel22clone" name="newModel22clone" description="Default view for list newModel22" id="newModel22clone"/>
+    <views allColumns="true" default="true" entityName="candidates_report_2024-11-07T09" name="candidates_report_2024-11-07T09" description="Default view for list candidates_report_2024-11-07T09" id="candidates_report_2024-11-07T09"/>
+    <views allColumns="true" default="true" entityName="Sheet1" name="Sheet1" description="Default view for list Sheet1" id="Sheet1"/>
+    <views allColumns="true" default="true" entityName="Datalist1" name="Datalist1" description="Default view for list Datalist1" id="Datalist1"/>
+    <connectors layoutDetected="true" entityName="candidates_report_2024-11-07T09" version="25" name="candidates_report_2024-11-07T09" created="2024-11-14T13:22:30.331+02:00" createdBy="admin" lastUpdated="2024-11-14T13:22:30.331+02:00" lastUpdatedBy="admin" id="candidates_report_2024-11-07T09">
+        <connectorFields columnIndex="0" ignore="false" mapField="Candidate Id" type="integer" rawType="Long" allowNull="true" name="Candidate Id" id="Candidate Id"/>
+        <connectorFields columnIndex="1" ignore="false" mapField="Candidate Name" type="text" rawType="String" allowNull="true" name="Candidate Name" id="Candidate Name"/>
+        <connectorFields columnIndex="2" ignore="false" mapField="Candidate Email" type="text" rawType="String" allowNull="true" name="Candidate Email" id="Candidate Email"/>
+        <connectorFields columnIndex="3" ignore="false" mapField="Ip Address" type="text" rawType="String" allowNull="true" name="Ip Address" id="Ip Address"/>
+        <connectorFields columnIndex="4" ignore="false" mapField="Candidate Tags" allowNull="true" name="Candidate Tags" id="Candidate Tags"/>
+        <connectorFields columnIndex="5" ignore="false" mapField="Company Id" type="integer" rawType="Long" allowNull="true" name="Company Id" id="Company Id"/>
+        <connectorFields columnIndex="6" ignore="false" mapField="Company Name" type="text" rawType="String" allowNull="true" name="Company Name" id="Company Name"/>
+        <connectorFields columnIndex="7" ignore="false" mapField="Invite Id" type="integer" rawType="Long" allowNull="true" name="Invite Id" id="Invite Id"/>
+        <connectorFields columnIndex="8" ignore="false" mapField="Invited By Name" type="text" rawType="String" allowNull="true" name="Invited By Name" id="Invited By Name"/>
+        <connectorFields columnIndex="9" ignore="false" mapField="Invited By Email" type="text" rawType="String" allowNull="true" name="Invited By Email" id="Invited By Email"/>
+        <connectorFields columnIndex="10" ignore="false" mapField="Invite Valid From" type="text" rawType="String" allowNull="true" name="Invite Valid From" id="Invite Valid From"/>
+        <connectorFields columnIndex="11" ignore="false" mapField="Invite Valid To" type="datetime" format="M/d/yy h:mm a" rawType="Date" allowNull="true" name="Invite Valid To" id="Invite Valid To"/>
+        <connectorFields columnIndex="12" ignore="false" mapField="Invited At" type="text" rawType="String" allowNull="true" name="Invited At" id="Invited At"/>
+        <connectorFields columnIndex="13" ignore="false" mapField="Invite Method" type="text" rawType="String" allowNull="true" name="Invite Method" id="Invite Method"/>
+        <connectorFields columnIndex="14" ignore="false" mapField="Test Id" type="integer" rawType="Long" allowNull="true" name="Test Id" id="Test Id"/>
+        <connectorFields columnIndex="15" ignore="false" mapField="Test Name" type="text" rawType="String" allowNull="true" name="Test Name" id="Test Name"/>
+        <connectorFields columnIndex="16" ignore="false" mapField="Role" type="text" rawType="String" allowNull="true" name="Role" id="Role"/>
+        <connectorFields columnIndex="17" ignore="false" mapField="Test Duration (seconds)" type="integer" rawType="Long" allowNull="true" name="Test Duration (seconds)" id="Test Duration (seconds)"/>
+        <connectorFields columnIndex="18" ignore="false" mapField="Test Owner Name" type="text" rawType="String" allowNull="true" name="Test Owner Name" id="Test Owner Name"/>
+        <connectorFields columnIndex="19" ignore="false" mapField="Test Owner Email" type="text" rawType="String" allowNull="true" name="Test Owner Email" id="Test Owner Email"/>
+        <connectorFields columnIndex="20" ignore="false" mapField="Attempt Id" type="integer" rawType="Long" allowNull="true" name="Attempt Id" id="Attempt Id"/>
+        <connectorFields columnIndex="21" ignore="false" mapField="Attempt Starttime" type="text" rawType="String" allowNull="true" name="Attempt Starttime" id="Attempt Starttime"/>
+        <connectorFields columnIndex="22" ignore="false" mapField="Attempt Endtime" type="text" rawType="String" allowNull="true" name="Attempt Endtime" id="Attempt Endtime"/>
+        <connectorFields columnIndex="23" ignore="false" mapField="Attempt Time Taken (seconds)" type="integer" rawType="Long" allowNull="true" name="Attempt Time Taken (seconds)" id="Attempt Time Taken (seconds)"/>
+        <connectorFields columnIndex="24" ignore="false" mapField="Status" type="text" rawType="String" allowNull="true" name="Status" id="Status"/>
+        <connectorFields columnIndex="25" ignore="false" mapField="Attempt Count" type="integer" rawType="Long" allowNull="true" name="Attempt Count" id="Attempt Count"/>
+        <connectorFields columnIndex="26" ignore="false" mapField="Attempt Count(LifeTime)" type="integer" rawType="Long" allowNull="true" name="Attempt Count(LifeTime)" id="Attempt Count(LifeTime)"/>
+        <connectorFields columnIndex="27" ignore="false" mapField="Max Score" type="integer" rawType="Long" allowNull="true" name="Max Score" id="Max Score"/>
+        <connectorFields columnIndex="28" ignore="false" mapField="Cutoff Score" type="integer" rawType="Long" allowNull="true" name="Cutoff Score" id="Cutoff Score"/>
+        <connectorFields columnIndex="29" ignore="false" mapField="Score" type="decimal" rawType="BigDecimal" allowNull="true" name="Score" id="Score"/>
+        <connectorFields columnIndex="30" ignore="false" mapField="Percentage Score" type="decimal" rawType="BigDecimal" allowNull="true" name="Percentage Score" id="Percentage Score"/>
+        <connectorFields columnIndex="31" ignore="false" mapField="Detailed Report Url" type="text" rawType="String" allowNull="true" name="Detailed Report Url" id="Detailed Report Url"/>
+        <connectorFields columnIndex="32" ignore="false" mapField="Total Questions Asked" type="integer" rawType="Long" allowNull="true" name="Total Questions Asked" id="Total Questions Asked"/>
+        <connectorFields columnIndex="33" ignore="false" mapField="Percentage Questions Answered" type="integer" rawType="Long" allowNull="true" name="Percentage Questions Answered" id="Percentage Questions Answered"/>
+        <connectorFields columnIndex="34" ignore="false" mapField="Atleast 1 Question Answered" type="text" rawType="String" allowNull="true" name="Atleast 1 Question Answered" id="Atleast 1 Question Answered"/>
+        <connectorFields columnIndex="35" ignore="false" mapField="All Questions Answered" type="text" rawType="String" allowNull="true" name="All Questions Answered" id="All Questions Answered"/>
+        <connectorFields columnIndex="36" ignore="false" mapField="Attempt Plagiarism" type="text" rawType="String" allowNull="true" name="Attempt Plagiarism" id="Attempt Plagiarism"/>
+        <connectorFields columnIndex="37" ignore="false" mapField="Number Of Window Exits" type="integer" rawType="Long" allowNull="true" name="Number Of Window Exits" id="Number Of Window Exits"/>
+        <connectorFields columnIndex="38" ignore="false" mapField="Out Of Window Duration (seconds)" type="integer" rawType="Long" allowNull="true" name="Out Of Window Duration (seconds)" id="Out Of Window Duration (seconds)"/>
+        <connectorFields columnIndex="39" ignore="false" mapField="Network Disconnected Duration (seconds)" type="integer" rawType="Long" allowNull="true" name="Network Disconnected Duration (seconds)" id="Network Disconnected Duration (seconds)"/>
+        <connectorFields columnIndex="40" ignore="false" mapField="Copy Paste Frequency" type="integer" rawType="Long" allowNull="true" name="Copy Paste Frequency" id="Copy Paste Frequency"/>
+        <connectorFields columnIndex="41" ignore="false" mapField="Webcam Switch Detected" type="text" rawType="String" allowNull="true" name="Webcam Switch Detected" id="Webcam Switch Detected"/>
+        <connectorFields columnIndex="42" ignore="false" mapField="Candidate Feedback Rating" type="integer" rawType="Long" allowNull="true" name="Candidate Feedback Rating" id="Candidate Feedback Rating"/>
+        <connectorFields columnIndex="43" ignore="false" mapField="Candidate Feedback Comments" type="text" rawType="String" allowNull="true" name="Candidate Feedback Comments" id="Candidate Feedback Comments"/>
+        <connectorFields columnIndex="44" ignore="false" mapField="Test Creator - Team" type="text" rawType="String" allowNull="true" name="Test Creator - Team" id="Test Creator - Team"/>
+        <connectorFields columnIndex="45" ignore="false" mapField="Test Creator - Team Owner" type="text" rawType="String" allowNull="true" name="Test Creator - Team Owner" id="Test Creator - Team Owner"/>
+        <connectorFields columnIndex="46" ignore="false" mapField="Test Creator - Region" allowNull="true" name="Test Creator - Region" id="Test Creator - Region"/>
+        <connectorFields columnIndex="47" ignore="false" mapField="Test Creator - Department" allowNull="true" name="Test Creator - Department" id="Test Creator - Department"/>
+        <connectorFields columnIndex="48" ignore="false" mapField="full name" type="text" rawType="String" allowNull="true" name="full name" id="full name"/>
+        <connectorFields columnIndex="49" ignore="false" mapField="years experience" type="text" rawType="String" allowNull="true" name="years experience" id="years experience"/>
+        <connectorFields mapField="sourceName" type="text" readOnly="true" rawType="String" name="sourceName" description="Source name" id="sourceName"/>
+        <connectorFields mapField="lineNumber" type="integer" readOnly="true" rawType="Long" name="lineNumber" description="Source line number" id="lineNumber"/>
+        <dataSource connectorUrl="New Microsoft Excel Worksheet.xlsx">
+            <fileSource>
+                <dataSourceRefs>New Microsoft Excel Worksheet.xlsx</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="excel">
+            <excelMedia>
+                <component componentType="excelworksheet" componentId="rId1" componentName="candidates_report_2024-11-07T09" displayName="candidates_report_2024-11-07T09"/>
+            </excelMedia>
+        </mediaConfig>
+    </connectors>
+    <connectors entityName="Sheet1" name="Sheet1" created="2024-11-14T13:22:30.332+02:00" createdBy="admin" lastUpdated="2024-11-14T13:22:30.332+02:00" lastUpdatedBy="admin" id="Sheet1">
+        <dataSource connectorUrl="New Microsoft Excel Worksheet.xlsx">
+            <fileSource>
+                <dataSourceRefs>New Microsoft Excel Worksheet.xlsx</dataSourceRefs>
+            </fileSource>
+            <loadFilter/>
+        </dataSource>
+        <mediaConfig connectorMediaType="excel">
+            <excelMedia>
+                <component componentType="excelworksheet" componentId="rId2" componentName="Sheet1" displayName="Sheet1"/>
+            </excelMedia>
+        </mediaConfig>
+    </connectors>
+    <extra name="ModelCanvasCoordinates" description="Coordinates for ModelCanvasCoordinates" id="ModelCanvasCoordinates">
+        <body>{"DATALIST:candidates_report_2024-11-07T09":{"x":-12,"y":-115},"CONNECTOR:Sheet1":{"x":0,"y":0},"DATALIST:Sheet1":{"x":-466,"y":76},"DATALIST:Datalist1":{"x":482,"y":-11},"CONNECTOR:candidates_report_2024-11-07T09":{"x":0,"y":0}}</body>
+    </extra>
 </ns3:modelConfig>
